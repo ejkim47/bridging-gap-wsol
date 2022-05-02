@@ -1,0 +1,52 @@
+
+# Util
+seed: 0
+experiment_name: bridging-gap
+log_dir: ./exp
+override_cache: True
+workers: 4
+
+# Data
+dataset_name: CUB
+data_root: ./dataset
+metadata_root: ./metadata
+proxy_training_set: False
+num_val_sample_per_class: 0
+
+# Setting
+architecture: vgg16
+epochs: 70
+warm_epochs: 20
+pretrained: True
+eval_interval: 1
+cam_curve_interval: 0.005
+resize_size: 256
+crop_size: 224
+multi_contour_eval: True
+multi_iou_eval: True
+iou_threshold_list: [30, 50, 70]
+box_v2_metric: True
+save_cam: False
+only_eval: False
+
+# Common hyperparameters
+warm_batch_size: 32
+batch_size: 64
+lr: 0.004
+lr_decay_frequency: 15
+lr_decay_points: [41, 61]
+lr_classifier_ratio: 5.0
+momentum: 0.9
+weight_decay: 0.0005
+large_feature_map: False
+lr_decay_rate: 0.2
+
+# Method-specific hyperparameters
+wsol_method: bridging-gap
+loss_ratio_sim: 0.5
+sim_fg_thres: 0.6
+sim_bg_thres: 0.1
+loss_ratio_norm: 0.15
+loss_ratio_drop: 3.0
+drop_threshold: 0.8
+drop_prob: 0.5
