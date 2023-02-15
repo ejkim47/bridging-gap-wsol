@@ -1,7 +1,7 @@
 ## Bridging the Gap for WSOL (CVPR 2022)
 
 This is code for "Bridging the Gap between Classification and Localization for Weakly Supervised Object Localization."<br>
-[ArXiv](https://arxiv.org/abs/2204.00220) | CVF Open Access
+[ArXiv](https://arxiv.org/abs/2204.00220) | [CVF Open Access](https://openaccess.thecvf.com/content/CVPR2022/papers/Kim_Bridging_the_Gap_Between_Classification_and_Localization_for_Weakly_Supervised_CVPR_2022_paper.pdf)
 
 
 This code is heavily borrowed from [Evaluating Weakly Supervised Object Localization Methods Right](https://github.com/clovaai/wsolevaluation).
